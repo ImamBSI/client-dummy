@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import App from "./App";
+import HomePage from "./pages/index";
 import "./index.css";
 
 const PrivateRoute = ({ children }: { children: JSX.Element }) => {
@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           path="/"
           element={
             <PrivateRoute>
-              <App />
+              <HomePage />
             </PrivateRoute>
           }
         />
