@@ -1,11 +1,11 @@
 import { StrictMode, type JSX } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import HomePage from "./pages/index";
 import "./index.css";
-import ForgotPassword from "./components/ForgotPassword";
+import ForgotPassword from "./pages/ForgotPassword";
 import Page1 from "./pages/page-1";
 import Page2 from "./pages/page-2";
 import Page3 from "./pages/page-3";
