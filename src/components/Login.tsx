@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { authApi } from "../services/api";
+import { authApi } from "../hooks/api";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -63,6 +63,12 @@ export default function Login() {
           Belum punya akun?{" "}
           <Link to="/register" className="text-blue-500 hover:underline">
             Register
+          </Link>
+        </p>
+        <p className="text-sm text-center mt-3">
+          Lupa password?{" "}
+          <Link to="/forgot-password" className="text-blue-500 hover:underline">
+            Reset Password
           </Link>
         </p>
       </form>

@@ -5,6 +5,10 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import HomePage from "./pages/index";
 import "./index.css";
+import ForgotPassword from "./components/ForgotPassword";
+import Page1 from "./pages/page-1";
+import Page2 from "./pages/page-2";
+import Page3 from "./pages/page-3";
 
 const PrivateRoute = ({ children }: { children: JSX.Element }) => {
   const user = localStorage.getItem("user");
@@ -17,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route
           path="/"
           element={
@@ -25,6 +30,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             </PrivateRoute>
           }
         />
+        <Route path="/page-1" element={<Page1 />} />
+        <Route path="/page-2" element={<Page2 />} />
+        <Route path="/page-3" element={<Page3 />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

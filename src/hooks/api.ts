@@ -18,4 +18,9 @@ export const authApi = {
     const res = await axios.post(`${API_URL}/login`, data);
     return res.data;
   },
+
+  checkEmail: async (email: string) => {
+    const res = await axios.post(`${API_URL}/check-email`, { email });
+    return res.data;
+  },
 };
