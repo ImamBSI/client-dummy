@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { authApi } from '../hooks/api';
+import { authApi } from '../hooks/express_api';
 
 const ForgotPassword: React.FC = () => {
   const [email, setEmail] = useState('');
